@@ -126,17 +126,13 @@
 #define kLMSScreenFit(L,M,S) ((iPhone6P||kScreenWidth>414.0f) ? (L) : ((iPhone6||iPhoneX||kScreenWidth>375.0f) ? (M) : (S)))
 // 建议用这个适配
 #define kLMS(L,M,S) kLMSScreenFit(L,M,S)
-#define kScaleRatio (kScreenWidthScale6>1.0?1.1:1.0)
+//#define kScaleRatio (kScreenWidthScale6>1.0?1.1:1.0)
+#define kScaleRatio (kScreenWidthScale6>1.0?1:(kScreenWidthScale6<1.0?-1:0))
 // 适配大小 iPhone6 pt
-#define kViewSize6(Size) ((Size)*kScaleRatio)
-#define kFontPointSize6(Size) ((Size)*kScaleRatio)
+#define kViewSize6(Size) ((Size)+kScaleRatio)
+#define kFontPointSize6(Size) ((Size)+kScaleRatio)
 #define kFontSize6(Size) [UIFont systemFontOfSize:kFontPointSize6(Size)]
 #define kFontBoldSize6(Size) [UIFont boldSystemFontOfSize:kFontPointSize6(Size)]
-// 适配大小 iPhone6 px
-#define kMarkViewSize6(Size) ((Size*0.5)*kScaleRatio)
-#define kMarkFontPointSize6(Size) ((Size*0.5)*kScaleRatio)
-#define kMarkFontSize6(Size) [UIFont systemFontOfSize:kMarkFontPointSize6(Size)]
-#define kMarkFontBoldSize6(Size) [UIFont boldSystemFontOfSize:kMarkFontPointSize6(Size)]
 
 
 /* ------------------------------ 类型转换 ------------------------------*/
