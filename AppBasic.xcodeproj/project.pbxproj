@@ -18,6 +18,9 @@
 		14B367FE217D70AA00F4CD50 /* CLLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B367FA217D70AA00F4CD50 /* CLLBaseViewController.m */; };
 		14B5041B217EF35C00030FCD /* CLLViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B50419217EF35C00030FCD /* CLLViewTool.m */; };
 		14B5041F217EF4AF00030FCD /* CLLVerticalContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B5041E217EF4AF00030FCD /* CLLVerticalContentView.m */; };
+		14B50427217F15B200030FCD /* CLLHudResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14B50421217F15B200030FCD /* CLLHudResources.bundle */; };
+		14B50428217F15B200030FCD /* CLLHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B50422217F15B200030FCD /* CLLHud.m */; };
+		14B50429217F15B200030FCD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B50424217F15B200030FCD /* MBProgressHUD.m */; };
 		14F7344A217ECA7B0024BA47 /* Basic.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14F73449217ECA7B0024BA47 /* Basic.bundle */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,11 @@
 		14B5041A217EF35C00030FCD /* CLLViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLViewTool.h; sourceTree = "<group>"; };
 		14B5041D217EF4AF00030FCD /* CLLVerticalContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLVerticalContentView.h; sourceTree = "<group>"; };
 		14B5041E217EF4AF00030FCD /* CLLVerticalContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLVerticalContentView.m; sourceTree = "<group>"; };
+		14B50421217F15B200030FCD /* CLLHudResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CLLHudResources.bundle; sourceTree = "<group>"; };
+		14B50422217F15B200030FCD /* CLLHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLHud.m; sourceTree = "<group>"; };
+		14B50424217F15B200030FCD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		14B50425217F15B200030FCD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		14B50426217F15B200030FCD /* CLLHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLHud.h; sourceTree = "<group>"; };
 		14F73449217ECA7B0024BA47 /* Basic.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Basic.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +84,7 @@
 		14B367D8217D677700F4CD50 /* AppBasic */ = {
 			isa = PBXGroup;
 			children = (
+				14B50420217F156000030FCD /* CLLHud */,
 				14B367EF217D678600F4CD50 /* Basic */,
 				14B367D9217D677700F4CD50 /* AppDelegate.h */,
 				14B367DA217D677700F4CD50 /* AppDelegate.m */,
@@ -141,6 +150,26 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		14B50420217F156000030FCD /* CLLHud */ = {
+			isa = PBXGroup;
+			children = (
+				14B50426217F15B200030FCD /* CLLHud.h */,
+				14B50422217F15B200030FCD /* CLLHud.m */,
+				14B50421217F15B200030FCD /* CLLHudResources.bundle */,
+				14B50423217F15B200030FCD /* MB */,
+			);
+			path = CLLHud;
+			sourceTree = "<group>";
+		};
+		14B50423217F15B200030FCD /* MB */ = {
+			isa = PBXGroup;
+			children = (
+				14B50425217F15B200030FCD /* MBProgressHUD.h */,
+				14B50424217F15B200030FCD /* MBProgressHUD.m */,
+			);
+			path = MB;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,6 +231,7 @@
 				14B367E3217D677900F4CD50 /* Assets.xcassets in Resources */,
 				14F7344A217ECA7B0024BA47 /* Basic.bundle in Resources */,
 				14B367E1217D677700F4CD50 /* Main.storyboard in Resources */,
+				14B50427217F15B200030FCD /* CLLHudResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,10 +246,12 @@
 				14B5041B217EF35C00030FCD /* CLLViewTool.m in Sources */,
 				14B367E9217D677900F4CD50 /* main.m in Sources */,
 				14B367F7217D70A000F4CD50 /* UIView+CLLFrame.m in Sources */,
+				14B50428217F15B200030FCD /* CLLHud.m in Sources */,
 				14B367FD217D70AA00F4CD50 /* CLLNavigationController.m in Sources */,
 				14B367FE217D70AA00F4CD50 /* CLLBaseViewController.m in Sources */,
 				14B5041F217EF4AF00030FCD /* CLLVerticalContentView.m in Sources */,
 				14B367DB217D677700F4CD50 /* AppDelegate.m in Sources */,
+				14B50429217F15B200030FCD /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
