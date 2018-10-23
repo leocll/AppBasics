@@ -4,5 +4,8 @@
 
 ### 集成方法
 ```
-pod 'AppBasics', :git => "https://github.com/leocll/AppBasics.git", :branch => 'master'
+# CLLBasic
+pod 'CLLBasic', :git => "https://github.com/leocll/AppBasics.git", :branch => 'master'
+# CLLHud
+pod 'CLLHud', :git => "https://github.com/leocll/AppBasics.git", :branch => 'master'
 ```

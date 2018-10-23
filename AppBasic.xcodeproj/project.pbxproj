@@ -21,6 +21,8 @@
 		14B50427217F15B200030FCD /* CLLHudResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14B50421217F15B200030FCD /* CLLHudResources.bundle */; };
 		14B50428217F15B200030FCD /* CLLHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B50422217F15B200030FCD /* CLLHud.m */; };
 		14B50429217F15B200030FCD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B50424217F15B200030FCD /* MBProgressHUD.m */; };
+		14B5042B217F17B400030FCD /* AppBasics.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 14B5042A217F17B300030FCD /* AppBasics.podspec */; };
+		14B5042D217F17D000030FCD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 14B5042C217F17D000030FCD /* README.md */; };
 		14F7344A217ECA7B0024BA47 /* Basic.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14F73449217ECA7B0024BA47 /* Basic.bundle */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		14B50424217F15B200030FCD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		14B50425217F15B200030FCD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		14B50426217F15B200030FCD /* CLLHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLHud.h; sourceTree = "<group>"; };
+		14B5042A217F17B300030FCD /* AppBasics.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppBasics.podspec; sourceTree = "<group>"; };
+		14B5042C217F17D000030FCD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		14F73449217ECA7B0024BA47 /* Basic.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Basic.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +72,8 @@
 		14B367CD217D677700F4CD50 = {
 			isa = PBXGroup;
 			children = (
+				14B5042C217F17D000030FCD /* README.md */,
+				14B5042A217F17B300030FCD /* AppBasics.podspec */,
 				14B367D8217D677700F4CD50 /* AppBasic */,
 				14B367D7217D677700F4CD50 /* Products */,
 			);
@@ -230,8 +236,10 @@
 				14B367E6217D677900F4CD50 /* LaunchScreen.storyboard in Resources */,
 				14B367E3217D677900F4CD50 /* Assets.xcassets in Resources */,
 				14F7344A217ECA7B0024BA47 /* Basic.bundle in Resources */,
+				14B5042D217F17D000030FCD /* README.md in Resources */,
 				14B367E1217D677700F4CD50 /* Main.storyboard in Resources */,
 				14B50427217F15B200030FCD /* CLLHudResources.bundle in Resources */,
+				14B5042B217F17B400030FCD /* AppBasics.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
