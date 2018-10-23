@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.author           = { "leocll" => "leocll@qq.com" }
   s.source           = { :git => "https://github.com/leocll/AppBasics.git", :branch => 'master' }
   s.source_files     = "AppBasic/Basic/**/*"
+  s.resources        = "AppBasic/Basic/Basic.bundle"
   s.ios.deployment_target = "8.0"
 
 end
