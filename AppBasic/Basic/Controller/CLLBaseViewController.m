@@ -29,7 +29,7 @@
         [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
         UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [backBtn setFrame:CGRectMake(0, 0, 44, 44)];
-        [backBtn setImage:NAMED_IMAGE(@"global_leftBackBlack") forState:UIControlStateNormal];
+        [backBtn setImage:NAMED_IMAGE(@"Basic.bundle/global_leftBackBlack") forState:UIControlStateNormal];
         backBtn.imageEdgeInsets = UIEdgeInsetsMake(0, -22, 0, 0);
         [backBtn addTarget:self action:@selector(touchesBack) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
