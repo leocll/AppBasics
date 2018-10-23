@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |s|
-  s.name             = "AppBasic"
+  s.name             = "AppBasics"
   s.version          = "1.0.0"
-  s.summary          = "App Basic"
+  s.summary          = "App Basics"
   s.description      = <<-DESC
   Crash Exception Handler
                        DESC
