@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/leocll/AppBasics.git"
-  s.license          = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
+  s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "leocll" => "leocll@qq.com" }
   s.source           = { :git => "https://github.com/leocll/AppBasics.git", :branch => 'master' }
   s.source_files     = "AppBasic/Basic/**/*"
