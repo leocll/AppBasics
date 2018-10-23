@@ -4,8 +4,11 @@
 
 ### 集成方法
 ```
+# leocll源
+source 'https://github.com/leocll/Specs.git'
+
 # CLLBasic
-pod 'CLLBasic', :git => "https://github.com/leocll/AppBasics.git", :branch => 'master'
+pod 'CLLBasic'
 # CLLHud
-pod 'CLLHud', :git => "https://github.com/leocll/AppBasics.git", :branch => 'master'
+pod 'CLLHud'
 ```
