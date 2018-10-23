@@ -16,6 +16,8 @@
 		14B367F7217D70A000F4CD50 /* UIView+CLLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B367F5217D70A000F4CD50 /* UIView+CLLFrame.m */; };
 		14B367FD217D70AA00F4CD50 /* CLLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B367F9217D70AA00F4CD50 /* CLLNavigationController.m */; };
 		14B367FE217D70AA00F4CD50 /* CLLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B367FA217D70AA00F4CD50 /* CLLBaseViewController.m */; };
+		14B5041B217EF35C00030FCD /* CLLViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B50419217EF35C00030FCD /* CLLViewTool.m */; };
+		14B5041F217EF4AF00030FCD /* CLLVerticalContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B5041E217EF4AF00030FCD /* CLLVerticalContentView.m */; };
 		14F7344A217ECA7B0024BA47 /* Basic.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14F73449217ECA7B0024BA47 /* Basic.bundle */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,10 @@
 		14B367FA217D70AA00F4CD50 /* CLLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLBaseViewController.m; sourceTree = "<group>"; };
 		14B367FB217D70AA00F4CD50 /* CLLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLBaseViewController.h; sourceTree = "<group>"; };
 		14B367FC217D70AA00F4CD50 /* CLLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLNavigationController.h; sourceTree = "<group>"; };
+		14B50419217EF35C00030FCD /* CLLViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLViewTool.m; sourceTree = "<group>"; };
+		14B5041A217EF35C00030FCD /* CLLViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLViewTool.h; sourceTree = "<group>"; };
+		14B5041D217EF4AF00030FCD /* CLLVerticalContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLVerticalContentView.h; sourceTree = "<group>"; };
+		14B5041E217EF4AF00030FCD /* CLLVerticalContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLVerticalContentView.m; sourceTree = "<group>"; };
 		14F73449217ECA7B0024BA47 /* Basic.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Basic.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +93,8 @@
 		14B367EF217D678600F4CD50 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				14B5041C217EF49A00030FCD /* View */,
+				14B50418217EF35C00030FCD /* Tool */,
 				14B367F8217D70AA00F4CD50 /* Controller */,
 				14B367F1217D6A5400F4CD50 /* Category */,
 				14B367F0217D67F400F4CD50 /* CLLCommonDefinition.h */,
@@ -113,6 +121,24 @@
 				14B367F9217D70AA00F4CD50 /* CLLNavigationController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		14B50418217EF35C00030FCD /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				14B5041A217EF35C00030FCD /* CLLViewTool.h */,
+				14B50419217EF35C00030FCD /* CLLViewTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		14B5041C217EF49A00030FCD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14B5041D217EF4AF00030FCD /* CLLVerticalContentView.h */,
+				14B5041E217EF4AF00030FCD /* CLLVerticalContentView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,10 +213,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B367DE217D677700F4CD50 /* ViewController.m in Sources */,
+				14B5041B217EF35C00030FCD /* CLLViewTool.m in Sources */,
 				14B367E9217D677900F4CD50 /* main.m in Sources */,
 				14B367F7217D70A000F4CD50 /* UIView+CLLFrame.m in Sources */,
 				14B367FD217D70AA00F4CD50 /* CLLNavigationController.m in Sources */,
 				14B367FE217D70AA00F4CD50 /* CLLBaseViewController.m in Sources */,
+				14B5041F217EF4AF00030FCD /* CLLVerticalContentView.m in Sources */,
 				14B367DB217D677700F4CD50 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

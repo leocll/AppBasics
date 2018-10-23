@@ -19,7 +19,7 @@
 #pragma mark ----------------------------- 生命周期 ------------------------------
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = RGB(200, 200, 200);
+    self.view.backgroundColor = RGB(230, 230, 230);
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.extendedLayoutIncludesOpaqueBars = NO;
