@@ -16,6 +16,7 @@
 		14B367F7217D70A000F4CD50 /* UIView+CLLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B367F5217D70A000F4CD50 /* UIView+CLLFrame.m */; };
 		14B367FD217D70AA00F4CD50 /* CLLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B367F9217D70AA00F4CD50 /* CLLNavigationController.m */; };
 		14B367FE217D70AA00F4CD50 /* CLLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B367FA217D70AA00F4CD50 /* CLLBaseViewController.m */; };
+		14F7344A217ECA7B0024BA47 /* Basic.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14F73449217ECA7B0024BA47 /* Basic.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		14B367FA217D70AA00F4CD50 /* CLLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLBaseViewController.m; sourceTree = "<group>"; };
 		14B367FB217D70AA00F4CD50 /* CLLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLBaseViewController.h; sourceTree = "<group>"; };
 		14B367FC217D70AA00F4CD50 /* CLLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLNavigationController.h; sourceTree = "<group>"; };
+		14F73449217ECA7B0024BA47 /* Basic.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Basic.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				14B367F8217D70AA00F4CD50 /* Controller */,
 				14B367F1217D6A5400F4CD50 /* Category */,
 				14B367F0217D67F400F4CD50 /* CLLCommonDefinition.h */,
+				14F73449217ECA7B0024BA47 /* Basic.bundle */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				14B367E6217D677900F4CD50 /* LaunchScreen.storyboard in Resources */,
 				14B367E3217D677900F4CD50 /* Assets.xcassets in Resources */,
+				14F7344A217ECA7B0024BA47 /* Basic.bundle in Resources */,
 				14B367E1217D677700F4CD50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
