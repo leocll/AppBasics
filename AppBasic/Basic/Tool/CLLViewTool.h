@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIButton *)makeButton:(void(^)(UIButton *btn))block layout:(void(^)(UIButton *btn))layout;
 
-+ (UIImageView *)makeImageView:(UIImage *)image block:(void(^_Nullable)(UIImageView *imageView))block;
++ (UIImageView *)makeImageView:(UIImage * _Nullable)image block:(void(^_Nullable)(UIImageView *imageView))block;
 
 + (UIImage *)makeImageFromView:(UIView *)view;
 

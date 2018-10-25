@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface UIView (Priority)
 /**优先级*/
-@property (nonatomic, copy) NSNumber *index;
+@property (nonatomic, copy, nullable) NSNumber *index;
 /**垂直间隙*/
 @property (nonatomic, assign) CGFloat verMargin;
 @end

@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
 @interface CLLNavigationController : UINavigationController
 
-+ (instancetype)navigationWithRootControllerClass:(Class)aClass block:(void(^)(UIViewController *rootVc))block;
++ (instancetype)navigationWithRootControllerClass:(Class)aClass block:(void(^ _Nullable)(UIViewController *rootVc))block;
 
 @end
+NS_ASSUME_NONNULL_END
