@@ -59,7 +59,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     // 背景
     UINavigationBar *bar = [UINavigationBar appearance];
-    [bar setBackgroundImage:NAMED_IMAGE(@"Basic.bundle/navi_bg_64") forBarMetrics:0];
+    [bar setBackgroundImage:NAME_IMAGE_FOR_BUNDLE(@"Basic.bundle/navi_bg_64",@"png",self.class) forBarMetrics:0];
     // 去掉导航栏下面的线
     [bar setShadowImage:[UIImage new]];
     // title白色

@@ -178,6 +178,8 @@ alpha:alphaValue]
 #define NAMED_IMAGE(name) [UIImage imageNamed:(name)]
 // 根据资源名称和bundle加载图片，如：imgView.image = NAMED_IMAGE(@"banner_");
 #define NAME_BUNDLE_IMAGE(bundle,name) [UIImage imageNamed:([NSString stringWithFormat:@"%@.bundle/%@", (bundle), (name)])]
+#define NAME_IMAGE_FOR_BUNDLE(name,ext,bundleClass) [UIImage imageNamed:[[NSBundle bundleForClass:(bundleClass)] pathForResource:(name) ofType:(ext)]]
+
 
 /* ------------------------- NSUserDefaults的相关 ------------------------*/
 #define USER_DEFAULT [NSUserDefaults standardUserDefaults]
