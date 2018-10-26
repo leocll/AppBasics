@@ -23,6 +23,7 @@
 		14B50429217F15B200030FCD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B50424217F15B200030FCD /* MBProgressHUD.m */; };
 		14B5042D217F17D000030FCD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 14B5042C217F17D000030FCD /* README.md */; };
 		14F7344A217ECA7B0024BA47 /* Basic.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14F73449217ECA7B0024BA47 /* Basic.bundle */; };
+		845ABE302182B1100010F290 /* Basic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845ABE2F2182B1100010F290 /* Basic.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		14B50426217F15B200030FCD /* CLLHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLHud.h; sourceTree = "<group>"; };
 		14B5042C217F17D000030FCD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		14F73449217ECA7B0024BA47 /* Basic.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Basic.bundle; sourceTree = "<group>"; };
+		845ABE2F2182B1100010F290 /* Basic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Basic.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				14B367F1217D6A5400F4CD50 /* Category */,
 				14B367F0217D67F400F4CD50 /* CLLCommonDefinition.h */,
 				14F73449217ECA7B0024BA47 /* Basic.bundle */,
+				845ABE2F2182B1100010F290 /* Basic.xcassets */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B367E6217D677900F4CD50 /* LaunchScreen.storyboard in Resources */,
+				845ABE302182B1100010F290 /* Basic.xcassets in Resources */,
 				14B367E3217D677900F4CD50 /* Assets.xcassets in Resources */,
 				14F7344A217ECA7B0024BA47 /* Basic.bundle in Resources */,
 				14B5042D217F17D000030FCD /* README.md in Resources */,
