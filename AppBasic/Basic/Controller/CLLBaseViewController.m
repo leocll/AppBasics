@@ -27,13 +27,15 @@
     // 初始化导航栏
     if (self.navigationController) {
         [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
-        UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [backBtn setFrame:CGRectMake(0, 0, 44, 44)];
-        [backBtn setImage:NAME_IMAGE_IN_BUNDLE(@"global_leftBackBlack",NSClassFromString(@"CLLNavigationController")) forState:UIControlStateNormal];
-        backBtn.imageEdgeInsets = UIEdgeInsetsMake(0, -22, 0, 0);
-        [backBtn addTarget:self action:@selector(touchesBack) forControlEvents:UIControlEventTouchUpInside];
-        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-        self.navigationItem.leftBarButtonItem = backItem;
+        if (self.navigationController.viewControllers.count > 1) {
+            UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            [backBtn setFrame:CGRectMake(0, 0, 44, 44)];
+            [backBtn setImage:NAME_IMAGE_IN_BUNDLE(@"global_leftBackBlack",NSClassFromString(@"CLLNavigationController")) forState:UIControlStateNormal];
+            backBtn.imageEdgeInsets = UIEdgeInsetsMake(0, -22, 0, 0);
+            [backBtn addTarget:self action:@selector(touchesBack) forControlEvents:UIControlEventTouchUpInside];
+            UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+            self.navigationItem.leftBarButtonItem = backItem;
+        }
     }
 }
 
