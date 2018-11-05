@@ -73,7 +73,7 @@
 
 #pragma mark ----------------------------- 其他方法 ------------------------------
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    viewController.hidesBottomBarWhenPushed = YES;
+    viewController.hidesBottomBarWhenPushed = (self.viewControllers.count >= 1);
     [super pushViewController:viewController animated:animated];
 }
 
