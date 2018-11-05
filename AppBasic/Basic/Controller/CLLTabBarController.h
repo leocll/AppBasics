@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param vc vc
  @param tabBarTitle title
- @param imageName 图片
- @param selectedImageName 被选中时的图片
+ @param image 图片
+ @param selectedImage 被选中时的图片
  */
 - (void)setupChildVC:(UIViewController *)vc tabBarTitle:(NSString *)tabBarTitle image:(UIImage *)image selectedImage:(UIImage *)selectedImage;
 @end

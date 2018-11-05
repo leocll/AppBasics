@@ -7,7 +7,6 @@
 //
 
 #import "CLLTabBarController.h"
-#import "CLLNavigationController.h"
 
 @interface CLLTabBarController ()
 
@@ -45,8 +44,7 @@
     vc.tabBarItem.title = tabBarTitle;
     vc.tabBarItem.image = image;
     vc.tabBarItem.selectedImage = selectedImage;
-    CLLNavigationController *nav = [[CLLNavigationController alloc] initWithRootViewController:vc];
-    [self addChildViewController:nav];
+    [self addChildViewController:vc];
 }
 
 #pragma mark ----------------------------- 私有方法 ------------------------------
