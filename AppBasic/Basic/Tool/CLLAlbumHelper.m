@@ -47,8 +47,8 @@
         _isFrontCamera = NO;
         _allowsEditingForCamera = NO;
         _allowsEditingForPhoto = NO;
-        _albumTakePhoto = @"相册";
-        _albumChoosePhoto = @"相机";
+        _albumTakePhoto = @"相机";
+        _albumChoosePhoto = @"相册";
     }
     return self;
 }
