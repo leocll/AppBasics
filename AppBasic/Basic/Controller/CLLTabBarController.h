@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
 @interface CLLTabBarController : UITabBarController
 /**
  设置子项
@@ -19,3 +20,4 @@
  */
 - (void)setupChildVC:(UIViewController *)vc tabBarTitle:(NSString *)tabBarTitle imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName;
 @end
+NS_ASSUME_NONNULL_END
