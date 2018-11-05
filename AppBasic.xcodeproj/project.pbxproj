@@ -23,6 +23,7 @@
 		14B50429217F15B200030FCD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B50424217F15B200030FCD /* MBProgressHUD.m */; };
 		14B5042D217F17D000030FCD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 14B5042C217F17D000030FCD /* README.md */; };
 		14F7344A217ECA7B0024BA47 /* Basic.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14F73449217ECA7B0024BA47 /* Basic.bundle */; };
+		844C75BE218FD12F00ED64A3 /* CLLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844C75BD218FD12F00ED64A3 /* CLLTabBarController.m */; };
 		845ABE302182B1100010F290 /* Basic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845ABE2F2182B1100010F290 /* Basic.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,8 @@
 		14B50426217F15B200030FCD /* CLLHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLHud.h; sourceTree = "<group>"; };
 		14B5042C217F17D000030FCD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		14F73449217ECA7B0024BA47 /* Basic.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Basic.bundle; sourceTree = "<group>"; };
+		844C75BC218FD12F00ED64A3 /* CLLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLTabBarController.h; sourceTree = "<group>"; };
+		844C75BD218FD12F00ED64A3 /* CLLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLTabBarController.m; sourceTree = "<group>"; };
 		845ABE2F2182B1100010F290 /* Basic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Basic.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +133,8 @@
 		14B367F8217D70AA00F4CD50 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				844C75BC218FD12F00ED64A3 /* CLLTabBarController.h */,
+				844C75BD218FD12F00ED64A3 /* CLLTabBarController.m */,
 				14B367FB217D70AA00F4CD50 /* CLLBaseViewController.h */,
 				14B367FA217D70AA00F4CD50 /* CLLBaseViewController.m */,
 				14B367FC217D70AA00F4CD50 /* CLLNavigationController.h */,
@@ -255,6 +260,7 @@
 				14B367E9217D677900F4CD50 /* main.m in Sources */,
 				14B367F7217D70A000F4CD50 /* UIView+CLLFrame.m in Sources */,
 				14B50428217F15B200030FCD /* CLLHud.m in Sources */,
+				844C75BE218FD12F00ED64A3 /* CLLTabBarController.m in Sources */,
 				14B367FD217D70AA00F4CD50 /* CLLNavigationController.m in Sources */,
 				14B367FE217D70AA00F4CD50 /* CLLBaseViewController.m in Sources */,
 				14B5041F217EF4AF00030FCD /* CLLVerticalContentView.m in Sources */,
