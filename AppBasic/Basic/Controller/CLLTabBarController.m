@@ -26,7 +26,7 @@
 
 #pragma mark - 初始化默认数据
 - (void)createDefaultData {
-
+    
 }
 
 #pragma mark - 初始化界面
@@ -41,10 +41,10 @@
 }
 
 #pragma mark - 初始化子控制器
-- (void)setupChildVC:(UIViewController *)vc tabBarTitle:(NSString *)tabBarTitle imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName {
+- (void)setupChildVC:(UIViewController *)vc tabBarTitle:(NSString *)tabBarTitle image:(nonnull UIImage *)image selectedImage:(nonnull UIImage *)selectedImage {
     vc.tabBarItem.title = tabBarTitle;
-    vc.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    vc.tabBarItem.image = image;
+    vc.tabBarItem.selectedImage = selectedImage;
     CLLNavigationController *nav = [[CLLNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
 }
