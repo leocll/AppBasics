@@ -23,6 +23,9 @@
 		14B50429217F15B200030FCD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B50424217F15B200030FCD /* MBProgressHUD.m */; };
 		14B5042D217F17D000030FCD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 14B5042C217F17D000030FCD /* README.md */; };
 		14F7344A217ECA7B0024BA47 /* Basic.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14F73449217ECA7B0024BA47 /* Basic.bundle */; };
+		8424883621902BAE003A89FA /* CLLAlbumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8424883421902BAE003A89FA /* CLLAlbumHelper.m */; };
+		8424883F219030C2003A89FA /* CLLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8424883E219030C2003A89FA /* CLLAlertView.m */; };
+		8424884221903B8B003A89FA /* CLLSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8424884021903B8B003A89FA /* CLLSheetView.m */; };
 		844C75BE218FD12F00ED64A3 /* CLLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844C75BD218FD12F00ED64A3 /* CLLTabBarController.m */; };
 		845ABE302182B1100010F290 /* Basic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845ABE2F2182B1100010F290 /* Basic.xcassets */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,12 @@
 		14B50426217F15B200030FCD /* CLLHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLHud.h; sourceTree = "<group>"; };
 		14B5042C217F17D000030FCD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		14F73449217ECA7B0024BA47 /* Basic.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Basic.bundle; sourceTree = "<group>"; };
+		8424883421902BAE003A89FA /* CLLAlbumHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLAlbumHelper.m; sourceTree = "<group>"; };
+		8424883521902BAE003A89FA /* CLLAlbumHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLAlbumHelper.h; sourceTree = "<group>"; };
+		8424883D219030C2003A89FA /* CLLAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLLAlertView.h; sourceTree = "<group>"; };
+		8424883E219030C2003A89FA /* CLLAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLLAlertView.m; sourceTree = "<group>"; };
+		8424884021903B8B003A89FA /* CLLSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLSheetView.m; sourceTree = "<group>"; };
+		8424884121903B8B003A89FA /* CLLSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLSheetView.h; sourceTree = "<group>"; };
 		844C75BC218FD12F00ED64A3 /* CLLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLTabBarController.h; sourceTree = "<group>"; };
 		844C75BD218FD12F00ED64A3 /* CLLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLTabBarController.m; sourceTree = "<group>"; };
 		845ABE2F2182B1100010F290 /* Basic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Basic.xcassets; sourceTree = "<group>"; };
@@ -146,6 +155,8 @@
 		14B50418217EF35C00030FCD /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				8424883521902BAE003A89FA /* CLLAlbumHelper.h */,
+				8424883421902BAE003A89FA /* CLLAlbumHelper.m */,
 				14B5041A217EF35C00030FCD /* CLLViewTool.h */,
 				14B50419217EF35C00030FCD /* CLLViewTool.m */,
 			);
@@ -155,8 +166,12 @@
 		14B5041C217EF49A00030FCD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8424884121903B8B003A89FA /* CLLSheetView.h */,
+				8424884021903B8B003A89FA /* CLLSheetView.m */,
 				14B5041D217EF4AF00030FCD /* CLLVerticalContentView.h */,
 				14B5041E217EF4AF00030FCD /* CLLVerticalContentView.m */,
+				8424883D219030C2003A89FA /* CLLAlertView.h */,
+				8424883E219030C2003A89FA /* CLLAlertView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,7 +272,10 @@
 			files = (
 				14B367DE217D677700F4CD50 /* ViewController.m in Sources */,
 				14B5041B217EF35C00030FCD /* CLLViewTool.m in Sources */,
+				8424883F219030C2003A89FA /* CLLAlertView.m in Sources */,
+				8424883621902BAE003A89FA /* CLLAlbumHelper.m in Sources */,
 				14B367E9217D677900F4CD50 /* main.m in Sources */,
+				8424884221903B8B003A89FA /* CLLSheetView.m in Sources */,
 				14B367F7217D70A000F4CD50 /* UIView+CLLFrame.m in Sources */,
 				14B50428217F15B200030FCD /* CLLHud.m in Sources */,
 				844C75BE218FD12F00ED64A3 /* CLLTabBarController.m in Sources */,
