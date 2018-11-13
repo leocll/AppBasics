@@ -45,11 +45,13 @@
 - (void)createUI {
     self.backgroundColor = [UIColor whiteColor];
     self.width = 375 * kLMSScreenFit(0.95, 0.85, 0.7);
+    self.layer.cornerRadius = 4;
     __block CGFloat top = 0;
     // 标题
     if (self.title.length) {
         self.titleLabel = [CLLViewTool makeLabelWithFont:kFontSize6(15) textColor:RGB(52, 52, 52) block:^(UILabel * _Nonnull label) {
             label.text = self.title;
+            label.textAlignment = NSTextAlignmentCenter;
             [label sizeToFit];
             label.top = 25;
             label.width = self.width;
@@ -62,10 +64,14 @@
         self.contentLabel = [CLLViewTool makeLabelWithFont:kFontSize6(15) textColor:RGB(152, 152, 152) block:^(UILabel * _Nonnull label) {
             label.numberOfLines = 0;
             label.text = self.content;
+            label.textAlignment = NSTextAlignmentCenter;
             label.left = kLMS(20, 15, 15);
             label.width = self.width - label.left * 2;
             label.height = [label sizeThatFits:CGSizeMake(label.width, MAXFLOAT)].height;
             label.top = top + 15;
+            if (label.bottom < 100) {
+                label.height = 100 - label.top;
+            }
             [self addSubview:label];
             top = label.bottom;
         }];
@@ -81,11 +87,17 @@
         btn.top = top;
         [self addSubview:btn];
     }];
+    [self addSubview:[CLLViewTool makeHorizontalLine:^(UIView * _Nonnull line) {
+        line.backgroundColor = RGB(230, 230, 230);
+        line.width = self.width;
+        line.height = 0.5;
+        line.bottom = self.leftBtn.top;
+    }]];
     // 右按钮
     if (self.rightTitle.length) {
         self.rightBtn = [CLLViewTool makeButton:^(UIButton * _Nonnull btn) {
             btn.titleLabel.font = kFontSize6(15);
-            [btn setTitle:self.leftTitle forState:UIControlStateNormal];
+            [btn setTitle:self.rightTitle forState:UIControlStateNormal];
             [btn setTitleColor:RGB(52, 52, 52) forState:UIControlStateNormal];
             [btn addTarget:self action:@selector(touchesRightBtn) forControlEvents:UIControlEventTouchUpInside];
             btn.height = 50;
@@ -94,6 +106,13 @@
             btn.left = self.leftBtn.right;
             [self addSubview:btn];
         }];
+        [self addSubview:[CLLViewTool makeVerticalLine:^(UIView * _Nonnull line) {
+            line.backgroundColor = RGB(230, 230, 230);
+            line.width = 0.5;
+            line.height = self.leftBtn.height;
+            line.top = self.leftBtn.top;
+            line.centerX = self.width * 0.5;
+        }]];
     }
     
     self.height = self.leftBtn.bottom;
@@ -107,23 +126,25 @@
 - (void)touchesRightBtn {
     [self hide];
     EXECUTE_BLOCK(self.rightAction,self);
+    
 }
 
 - (void)show {
+    self.centerX = self.bgView.width * 0.5;
+    self.centerY = self.bgView.height * 0.5;
     [KEY_WINDOW addSubview:self.bgView];
     [self.bgView addSubview:self];
     [UIView animateWithDuration:0.3 animations:^{
         self.bgView.backgroundColor = RGBA(0, 0, 0, 0.3);
     }];
-    
     CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
-    animation.duration = 0.3;
+    animation.duration = 0.5;
     NSMutableArray *values = [NSMutableArray array];
-    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.03, 1.03, 1.0)]];
     [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.1, 0.1, 1.0)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.03, 1.03, 1.0)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.97, 0.97, 1.0)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)]];
     animation.values = values;
-    animation.fillMode=kCAFillModeForwards;
-    animation.removedOnCompletion = NO;
     [self.layer addAnimation:animation forKey:nil];
 }
 
