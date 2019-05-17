@@ -1,3 +1,6 @@
 **/.DS_Store
-**/AppBasic.xcodeproj/xcuserdata/**
-**/AppBasic.xcodeproj/project.xcworkspace
+**/*.xcodeproj/*
+!project.pbxproj
+**/*.xcworkspace/
+Pods/
+Podfile.lock
